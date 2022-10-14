@@ -153,9 +153,7 @@ class _AttachDialogWidgetState extends State<AttachDialogWidget>
 
   @override
   void didUpdateWidget(covariant AttachDialogWidget oldWidget) {
-    if (oldWidget.child != _child ||
-        oldWidget.targetContext != widget.targetContext ||
-        oldWidget.targetBuilder != widget.targetBuilder) _resetState();
+    _resetState();
     super.didUpdateWidget(oldWidget);
   }
 
